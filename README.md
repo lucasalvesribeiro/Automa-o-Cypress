@@ -68,7 +68,7 @@
 
 20. Dentro das novas pastas criadas, sempre iniciar colocando:
 
-- /// <reference types=”Cypress” />
+'/// <reference types=”Cypress” />'
  
 21. Depois disso, é só criar suas estruturas de teste.
  
