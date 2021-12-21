@@ -34,47 +34,47 @@
 
 16. Dentro desse arquivo, colocar os seguintes itens:
 
-.Ds_Store
-cypress.env.json
-cypress/screenshots
-cypress/videos
-node_modules 
+- .Ds_Store
+- cypress.env.json
+- cypress/screenshots
+- cypress/videos
+- node_modules 
 
 16.1. Explicação dos itens colocados no arquivo:
 
-.Ds_Store - Diz para englobar as config da sua máquina 
-cypress.env.json - Arquivo dos dados sensíveis 
-cypress/screenshots - Caminho aonde grava video q pega a pasta screenshots
-cypress/videos - Caminho aonde grava video q pega a pasta videos
-node_modules 
+- .Ds_Store - Diz para englobar as config da sua máquina 
+- cypress.env.json - Arquivo dos dados sensíveis 
+- cypress/screenshots - Caminho aonde grava video q pega a pasta screenshots
+- cypress/videos - Caminho aonde grava video q pega a pasta videos
+- node_modules 
 
 17. Criar pasta chamada ‘cypress.env.json’ onde se coloca os dados sensíveis, exemplo é seu usuário e senha do portal.
 
 18. Na pasta ‘cypress.json’ que já vem criada, colocar os dados de confg padrões do cypress:
 
-“baseUrl”: “url do site”
-“defaultCommandTimeout”: “colocar o tempo” 
-“viewportHeight”: “Colocar tamanho”
-“viewportWidth”: “Colocar tamanho”
+- “baseUrl”: “url do site”
+- “defaultCommandTimeout”: “colocar o tempo” 
+- “viewportHeight”: “Colocar tamanho”
+- “viewportWidth”: “Colocar tamanho”
 	
 18.1. Explicação dos itens acima:
 
-“baseUrl”: “url do site” - Especifica a URL que vai ser testada
-“defaultCommandTimeout”: “colocar o tempo” - serve para especificar o tempo que o cypress vai ter para fazer as ações, se colocado 40000, ele vai tentar por 4seg fazer aquela ação, senão vai dar erro
-“viewportHeight”: “Colocar tamanho” - Serve para colocar o tamanho da tela do cypress 
-“viewportWidth”: “Colocar tamanho” - Serve para colocar o tamanho da tela do cypress 
+- “baseUrl”: “url do site” - Especifica a URL que vai ser testada
+- “defaultCommandTimeout”: “colocar o tempo” - serve para especificar o tempo que o cypress vai ter para fazer as ações, se colocado 40000, ele vai tentar por 4seg fazer aquela ação, senão vai dar erro
+- “viewportHeight”: “Colocar tamanho” - Serve para colocar o tamanho da tela do cypress 
+- “viewportWidth”: “Colocar tamanho” - Serve para colocar o tamanho da tela do cypress 
 
 19. Dentro da pasta ‘integrations’, criar um arquivo chamado ‘nomeqtuquer.spec.js’, que seria onde vai ficar os cenários de teste propriamente ditos da tela que tu via especificar no nome do arquivo. Obs: Como já foi clonado o projeto, esses arquivos já estão criados.
 
 20. Dentro das novas pastas criadas, sempre iniciar colocando:
 
-/// <reference types=”Cypress” />
+- /// <reference types=”Cypress” />
  
 21. Depois disso, é só criar suas estruturas de teste.
  
 22. Dentro da pasta ‘index.js’, colocar:
  
-import ‘./nomedasuapastadecomandos’
+- import ‘./nomedasuapastadecomandos’
 
 Obs: ela importa seus comandos customizados para que possam ser usados nos cenários de teste.
  
